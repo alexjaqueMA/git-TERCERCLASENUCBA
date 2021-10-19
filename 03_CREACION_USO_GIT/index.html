@@ -1,112 +1,72 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 <head>
-    <!--ACA VA EL CONTENIDO QUE LOS HUMANOS NO VEN-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase01</title>
+    <title>clase02challenge</title>
+    <link rel="stylesheet" type="text/css" href="../Tarea de challenge-prueba/style.css" >
 </head>
-<body>
-    <!--ACA VA EL CONTENIDO QUE LOS HUMANOS VEN-->
-    <!--Estos son encabezados-->
-    <h1>ESTE ES EL TITULO PRINCIPAL</h1>
-    <h2>Este es el subtitulo</h2>
-    <h3>Titulos de secciones</h3>
-    <h4>Titulos de articulos</h4>
-    <h5>Acepto terminos y condiciones</h5>
-    <h6>La letra chica</h6>
 
-    <!--Parrafos-->
-    <p>
-        ESTO ES UN PARRAFO
-        y esto es otro
-    </p>
-    <p>
-        Esto es otro parrafo
-    </p>
-    <!-- esto es una lista -->
-    <!-- LISTAS ORDENADAS -->
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ol>
-    <!-- LISTAS DESORNEDAS -->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
-
-    <!--como saltar renglones  -->
+<body bgcolor="#F4DAB3" aria-colspan="center">
+    <h1>Segundo challenge Tarea Clase 02/FORMULARIO</h1>
+<div class="estruc" > 
+    
+    <div class="cuadrado" >    
+        <h2>Favor de completar el siguiente formulario para poder seguir con el proceso</h2>
+        <section>
+            <article align="center" aria-colspan="center">
+                Los contenidos que aparecen en el sitio web, incluyendo, sin limitación, imágenes, textos, software, fotografías, sonido, música, vídeos, elementos interactivos y afines ("Contenido"), marcas y logotipos ("Marcas"), o cualquier otro derecho de propiedad industrial o intelectual que aparecen en el mismo, son propiedad de EDP y queda expresamente prohibido su uso por terceros no autorizados. El contenido del sitio web solo está disponible para información y uso personal y no puede ser utilizado, copiado, reproducido, distribuido, transmitido, difundido, vendido, licenciado o, de cualquier otra forma, explotado para cualquier otro fin sin el consentimiento previo y por escrito de sus respectivos propietarios.
+            </article>
+        </section>
+    </div>
     <br>
 
-    <!-- Hiper vinculos -->
-    <a href="https://www.google.com/" target="_blank">Esto es el ingreso a google</a>
-    
-    <!-- Imagenes -->
-    <a href="https://picsart.com/i/242931176014212" target="_blank">
-    
-           <img src="https://cdn140.picsart.com/242931176014212.png?type=webp&to=min&r=640">
-    
-    </a>
+    <div align="center" class="rectangulo2">
+        <form>
+            <label for="Nombre">Nombre y Apellido: </label>
+            <input name="Nombre" type="text" placeholder="Llano, Daniela Natalia">
+            <br>
+            <label for="Mail">E-Mail: </label>
+            <input name="Mail" type="email" placeholder="juanpablorom@gmail.com" required>
+            <br>
+            <label for="Password">Contraseña: </label>
+            <input name="Password" type="password" required>
+            <br>
+            <label for="number">Miembros de Familia </label>
+            <input type="number">
+            <br>
+            <label for="date">Fecha de Nacimiento </label>
+            <input type="date">
+            <br>
+            <label for="checkbox"> Recibir novedades por Email </label>
+            <input type="checkbox">
+            <br>
+            <label for="file">Agregar datos adjuntos</label>
+            <input type="file">
+            <br>
+            <label for="text">Agregar comentarios</label>
+            <input type="text">
+            <br>
+            <label for="select"> Indique su genero: </label>
+            <select>            
+                <option value="Femenino">F</option>
+                <option value="Masculino">M</option>
+                <option value="No binarie">X</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar" align="center">
+            
+        </form>
 
-    <!-- ____________________________C L A S E 02____________________________________________________________ -->
-
-    <!-- Como agregar una imagen local -->
-    <img src="./images/salchi.png">
-
-    <!-- Los divs -->
-    <div>
-
-        <section>
-            <h2>Esta es una seccion</h2>
-            <article>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate suscipit quibusdam iusto iste fuga inventore laborum officia ullam est, magni tenetur. Fuga, corrupti! Mollitia molestias dolor, nobis reiciendis sequi in?
-            </article>
-            <article>
-                ESTO es un articulo
-            </article>
-        </section>   
-
+        <img src="../images/suscribe.PNG" alt="imagen" align="center">
+        <br>
+        <br>
+        <img src="https://c.tenor.com/KkPvhx0yQyUAAAAC/buena-esa-muy-bien.gif" alt="imagen" align="center">
     </div>
     
-    <form>
-        <label for="Nombre">Nombre y Apellido: </label>
-        <input name="Nombre" type="text" placeholder="Llano, Daniela Natalia">
-        <br>
-        <label for="Mail">E-Mail: </label>
-        <input name="Mail" type="email" placeholder="juanpablorom@gmail.com" required>
-        <br>
-        <label for="Password">Password: </label>
-        <input name="Password" type="password" required>
-        <br>
-        <input type="number">
-        <br>
-        <input type="date">
-        <br>
-        <input type="color">
-        <br>
-        <input type="checkbox">
-        <input type="radio">
-        <br>
-        <input type="textarea">
-        <br>
-        <input type="file">
-        <br><br>
-        <input type="submit" value="Enviar">
-    </form>
-
-    <select>
-        <option value="Femenino">F</option>
-        <option value="Masculino">M</option>
-        <option value="No binarie">X</option>
-    </select>
-
-    <video width="320" height="240" controls autoplay>
-        <source src="./video.mp4" type="video/mp4">
-    </video>
-
+        
+</div>
+    
 </body>
 </html>
