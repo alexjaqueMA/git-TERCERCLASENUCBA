@@ -1,0 +1,51 @@
+
+/*el asterisco (SELECTOR) es una cambio que hara a todo en general por lo general*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+/*recordar que body es la etiqueta general del todo el sitio*/
+body{
+    background-image: url("../contenidoclase/galaxy-wallpaper-iPhone-chandra-ar72014-3.png");
+    /*esta funciona es para posicionar una imagen del fondo
+    de nuestro sitio web*/
+    background-repeat: repeat-x;
+    /*esta funciona repite la imagen de fondo del sitio web
+    en x, podria y tambien dependiendo como lo queramos */
+   background-attachment: fixed;
+   /*esta funcion fixed lo que hace es mantener la imagen
+     fijada y que mas alla de ir bajando haciendo scroll
+     esta misma siga estando en su posición */
+}
+
+/*a continuacion le mostraremos un selector de clase*/
+. imagen2 {
+     filter: brightness(1.1);
+     mix-blend-mode: multiply;
+    /*esta funcion de background adapta la imagen al fondo
+    (ya sea negro,blanco...)*/
+     background-position: right ;
+    /*esta funcion de background te indica donde posicionara
+    la imagen a la cual hacemos referencia*/     
+}
+
+/*en vez de estar haciendo un selector por cada caso podemos hacer 
+selectores multiples para no hacer cada uno con las mismas caracterizticas*/
+h1 , h2, h3, h4 {
+    margin-top: 10px;
+    background-color: darkgoldenrod;
+}
+
+h1, .claseDos {
+    font-size: 100px;
+}
+
+.perritosalchica {
+    background-color:maroon ;
+}
+
+/*es un tipo de selector llamado ID */
+#perritoSalchica {
+    background-color: crimson;
+}

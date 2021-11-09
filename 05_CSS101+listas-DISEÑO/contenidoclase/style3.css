@@ -1,0 +1,23 @@
+
+
+body {
+    /*ejemplos de gradientes*/
+    background-image: linear-gradient(to right, red, yellow);
+    /*siempre es conveniente al usar gradiente usarlos en grados
+    para una mejor utilizacion de la funcion(abajo iremos mostrando ejemplos)*/
+    /*background-image: linear-gradient(45deg, red, yellow);*/
+    /*background-image: linear-gradient(-45seg, red, yellow);*/
+    /*________________________________________________________________________*/
+    /*Inclusive se puede usar grados y mas de dos colores de asi desearlo*/
+    /*background-image: linear-gradient(180deg, red, yellow, orange);*/
+    /*________________________________________________________________________*/
+    /*background-image: radial-gradient(circle, red, yellow);
+
+    /*tambien se pueden agregar porcentage a los colores utilizados, para saber cuanto cubrira el brackground de fondo*/
+    /*background-image: radial-gradient(circle,  red 5%, yellow 10%);*/
+
+    /*tambien hay funciones que se usan para repetir colores usando "repeating" */
+    /*background-image: repeating-radial-gradient(circle,  red 5%, yellow 10%);*/
+    /*background-image: conic-gradient( red, yellow);*/
+
+}
