@@ -7,7 +7,7 @@
 }
 /*recordar que body es la etiqueta general del todo el sitio*/
 body{
-    background-image: url("../contenidoclase/galaxy-wallpaper-iPhone-chandra-ar72014-3.png");
+    background-image: url("../tarea/galaxy-wallpaper-iPhone-chandra-ar72014-3.png");
     /*esta funciona es para posicionar una imagen del fondo
     de nuestro sitio web*/
     background-repeat: repeat-x;
