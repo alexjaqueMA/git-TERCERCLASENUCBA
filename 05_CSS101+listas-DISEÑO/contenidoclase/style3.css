@@ -21,3 +21,8 @@ body {
     /*background-image: conic-gradient( red, yellow);*/
 
 }
+
+hr{
+    height: 10px;
+    background-color: white;
+}
