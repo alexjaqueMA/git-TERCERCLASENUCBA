@@ -1,0 +1,445 @@
+*{
+
+  margin: 0px;
+  padding: 0px;
+  
+  box-sizing: border-box;
+  
+}
+
+
+
+@media only screen and (min-width: 375px) {
+
+  body{
+    
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .menu {
+
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 80px;
+    margin: 0;
+    overflow: hidden;
+}
+    
+    
+  .subcontenido {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    /*-----------Bordes superiores de la BARRA de NAVEGACION--------------------*/
+    
+    .menu.servicios {
+      border-top: #68a6be 0.3em solid;
+    }
+    
+    .menu.home {
+      border-top: #68a6be 0.3em solid;
+    }
+    
+    .menu.clientes {
+      border-top: #68a6be  0.3em solid;
+    }
+    
+    .menu.contacto {
+      border-top: #68a6be 0.3em solid;
+    }
+    
+    /* Atributos y transición de BARRA de NAVEGACION  */
+    
+    .menu > span {
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 0%;
+      transition: 0.5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+      font-family: monospace;
+    }
+    
+    .menu:after, .menu > span > span {
+      display: block;
+      text-align: center;
+      border-radius: 0em;
+      padding: 2em 0 1.5em;
+    }
+    
+    .menu:after {
+      content: attr(data-title);
+      width: 100%;
+      background: #000;
+      color: #fff; 
+    }
+    
+    .menu > span > span {
+      width: 80px;
+      color: #fff;
+    }
+    
+    .menu.servicios > span > span {
+      background: #68a6be ;
+    }
+    
+    .menu.clientes > span > span {
+      background: #68a6be ;
+    }
+    
+    .menu.home > span > span {
+      background: #68a6be;
+    }
+    
+    .menu.contacto > span > span {
+        background: #68a6be ;
+    }
+    
+    /* Lo que pasa con hover */
+    
+    .menu:hover > span {
+        height: 100%; 
+    }
+    
+    /* Dando formato a lista */ 
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li a {
+      display: inline;
+      float: right;
+      text-decoration: none;
+      font-family: sans;
+    }
+  
+    li{
+      color: white;
+    }
+  
+  
+  
+  .logo{
+      filter: brightness(1,1);
+      mix-blend-mode: multiply;
+  
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+  
+      -webkit-box-shadow: 4px 4px 20px #999;
+      filter: shadow(color=#999999, direction=135, strength=2);
+  
+      
+  }   
+  
+  .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+  
+      width: 100%;
+      font-size: 15px;
+      font-family: 'Roboto';
+  }
+  
+  /*-------------------------------------------------------------------*/
+  .wrapper1 {
+      display: flex;
+      flex-flow: row wrap;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .wrapper1 > * {
+        padding: 10px;
+        flex: 1 100%;
+  }
+  
+  /*---------------------------HEADER---------------------------------*/
+  header {
+  /* fallback for old browsers */
+   
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(184, 100%, 55%, 0.670), hsla(60, 15%, 71%, 0.670)) , url(../images/personas-trabajando-en-la-línea-de-producción-vendedor-156390546.jpg);
+  background-repeat: no-repeat;
+      
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       
+       height: 500px;
+       background-repeat: no-repeat;
+  
+       border: 10px solid white;
+      }
+  
+  
+  /*------------empieza la configuracion de los aside, el main y el footer-------------------*/
+  
+  /*----------MAIN--------------------------*/
+  .main {
+      background: #9cd7d5;
+  
+      flex: 3px;
+      border: 3px solid white;
+      border-radius: 2em;
+      margin: 30px;
+  
+      overflow: hidden;
+      text-align: justify;
+  
+      font-family: 'Roboto', sans-serif;
+  
+      -webkit-box-shadow: 4px 4px 20px #999;
+      /*-moz-box-shadow: 4px 4px 7px #999;*/
+      filter: shadow(color=#999999, direction=135, strength=2);
+  
+  }
+  
+  
+  /*Asides------------------------------------------------*/
+  /*----------------aside 1------------------*/
+  .aside-1 {
+      background: #9cd7d5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid white;
+      border-radius: 6em 1em;
+      margin: 25px;
+      width: 80%;
+  
+      -webkit-box-shadow: 4px 4px 20px #999;
+      /*-moz-box-shadow: 4px 4px 7px #999;*/
+      filter: shadow(color=#999999, direction=135, strength=2);
+  
+  }
+  
+  .imgaside1{
+  
+      height: 220px;
+      width: 240px;
+      margin-top: 0px;
+  }
+  
+
+  
+  /*--------------aside 2---------------*/
+  .aside-2 {
+    
+      background: #9cd7d5;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid white;
+      border-radius: 1em 6em;
+
+      margin: 25px;
+      width: 80%;
+
+      -webkit-box-shadow: 4px 4px 20px #999;
+      /* -moz-box-shadow: 4px 4px 7px #999; */
+      filter: shadow(color=#999999, direction=135, strength=2);
+
+
+}
+  
+  .imgaside2 {
+  
+    height: 270px;
+    width: 250px;
+    padding-bottom: 15px;
+  
+  }
+  /*--------------------Fin de asides-------------------*/
+  
+  /*----------------------Footer uno--------------------------------*/
+  .footer {
+    
+    background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(184, 100%, 55%, 0.670), hsla(60, 15%, 71%, 0.670)) , url(../images/Captura-de-pantalla-2018-03-29-a-las-19.35.59.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    height: 900px;
+    justify-content: center;
+
+    border-radius: 2em;
+  
+    -webkit-box-shadow: 4px 4px 7px #999;
+    -moz-box-shadow: 4px 4px 7px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+  
+  }
+  
+  .cont_footer{
+      
+      width: 100%;
+      
+      font-size: 21px;
+      font-family: monospace;
+  
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+  
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .text_footer {
+      
+      font-size: 21px;
+      width: 100%;
+      font-size: large;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+  
+  }
+  
+  
+  .logo_footer{
+       
+    mix-blend-mode: multiply;
+    filter: brightness(1,1);
+    align-self: end;
+    border-radius: 50%;
+  
+    width: 200px;
+    height: 200px; 
+
+    -webkit-box-shadow: 4px 4px 7px #999;
+    -moz-box-shadow: 4px 4px 7px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+  
+  
+  }
+  /*------------FIN DE FOOTER UNO---------------------------------------*/
+  
+  /*---------------------comienzo de pie PIE DE PAGINA-----------------------*/
+  
+  .finallypag{
+  
+    background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(184, 100%, 55%, 0.670), hsla(60, 15%, 71%, 0.670)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    border-top: 2px solid white;
+    margin: 0px;
+    padding: 20px;
+  
+    font-style: italic;
+    
+  }
+  
+  
+  .logo{
+    filter: brightness(1,1);
+    mix-blend-mode: multiply;
+    
+    width: 50%;
+    border-radius: 50%;
+  
+    -webkit-box-shadow: 4px 4px 20px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+  
+  }
+  
+  .textfinallypag{
+    display: flex;
+  
+  }
+  
+  
+  /*---------------------final PIE DE PAGINA-----------------------*/
+  
+  /*----------Ordernación de FLEXBOX------------------*/
+  
+  .aside {flex: 1 0 0;}
+  
+  
+  
+  .main    { flex: 3.0px}
+  .aside-1 {order: 1}
+  .main    {order: 2}
+  .aside-2 {order:3}
+  .footer  {order:4}
+  .finallypag {order:5}
+  
+  
+}
+
+/*-------------- FIN MODELO FIRST MOBILE----------------------*/
+
+  
+
+/*------Modelo RESPONSIVE hasta 1440px-----------*/
+@media only screen and (max-width: 1440px) {
+  
+  *{
+
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing: border-box;
+    
+  }
+
+  body{
+    
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .menu {
+
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 80px;
+    margin: 0;
+    overflow: hidden;
+  }
+ 
+  .logo{
+  filter: brightness(1,1);
+  mix-blend-mode: multiply;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  -webkit-box-shadow: 4px 4px 20px #999;
+  filter: shadow(color=#999999, direction=135, strength=2);
+
+  
+  }   
+   
+}

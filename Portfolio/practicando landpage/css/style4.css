@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+ margin: 0px;
+ padding: 0px;
+ 
+}
+/*utilizando grid y media querys para dar formato a la pag*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  
+  float: left;
+  padding: 20px;
+  margin-top: 17px;
+
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(184, 100%, 55%, 0.670), hsla(60, 15%, 71%, 0.670)), url(../images/46180882-salmón-vector-de-chevron-modelo-inconsútil-blanco-y-negro-fondo-pintado-zig-zag-composición-pincelad.jpg);
+  color: black;
+  padding: 15px;
+
+
+}
+
+.row{
+
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5B86E5, #36D1DC) , url(./images/bolas-bolitas-pelotas-pelotitas-gifmaniacos.es-20.gif);
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  width: 70%;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #9cd7d5;
+  color: black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.menu li:hover {
+  background-color: red;
+  color: white;
+}
+
+.aside {
+  background-color: #9cd7d5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+  color: black;
+}
+
+.aside2 {
+  background-color: #9cd7d5;
+  margin-top: 30px;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+ .aside3 {
+   background: none;
+   box-shadow: none;
+   margin-top: 15px;
+   color: black;  
+  }
+
+
+.columnp3 {
+
+  margin-top: 130px;
+  color: black;
+  background-color: #9cd7d5;
+  text-align: center;
+}
+
+
+.footer {
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.finallypag{
+
+  background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(184, 100%, 55%, 0.670), hsla(60, 15%, 71%, 0.670)), url(./images/Captura-de-pantalla-2018-03-29-a-las-19.35.59.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+  border-top: 2px solid white;
+  margin: 0px;
+  padding: 20px;
+
+  font-style: italic;
+
+  text-align: center;
+  
+}
+
+
+.logo{
+  filter: brightness(1,1);
+  mix-blend-mode: multiply;
+
+  border-radius: 50%;
+
+  -webkit-box-shadow: 4px 4px 20px #999;
+  filter: shadow(color=#999999, direction=135, strength=2);
+
+}
+
+.textfinallypag{
+  display: flex;
+
+}
+
+/* Mobile first */
+[class*="col-"] {
+    width: 100%
+}
+
+h5{
+  font-size: small;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* Para escritorio modelo responsive para adaptarse a cualquier resolucion*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+/*empezaremos a darle efecto a las imagenes, formatos y estilos*/
+
+.img1 {
+
+filter: sepia(1);
+mix-blend-mode: luminosity;
+border-radius: 2em 0em;
+
+}
+
+.img2{
+background:#ffffff;
+border-radius: 8px;
+}
+
+.imgserver {
+border-radius: 50%;
+
+}
+
+.link {
+
+filter: brightness(1.1);
+mix-blend-mode: multiply;
+  
+}
+
+
